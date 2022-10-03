@@ -38,7 +38,6 @@ public class TestClassSafariFirstTask {
 
     @Test
     public void checkFourthQuestion_correctAnswer() {
-        WebDriver driver = new FirefoxDriver();
         MainPage objMainPage2 = new MainPage(driver);
         objMainPage2.open();
         objMainPage2.checkFourthQuestion();
@@ -46,7 +45,6 @@ public class TestClassSafariFirstTask {
 
     @Test
     public void checkFifthQuestion_correctAnswer() {
-        WebDriver driver = new FirefoxDriver();
         MainPage objMainPage2 = new MainPage(driver);
         objMainPage2.open();
         objMainPage2.checkFifthQuestion();
@@ -54,7 +52,6 @@ public class TestClassSafariFirstTask {
 
     @Test
     public void checkSixthQuestion_correctAnswer() {
-        WebDriver driver = new FirefoxDriver();
         MainPage objMainPage2 = new MainPage(driver);
         objMainPage2.open();
         objMainPage2.checkSixthQuestion();
@@ -62,7 +59,6 @@ public class TestClassSafariFirstTask {
 
     @Test
     public void checkSeventhQuestion_correctAnswer() {
-        WebDriver driver = new FirefoxDriver();
         MainPage objMainPage2 = new MainPage(driver);
         objMainPage2.open();
         objMainPage2.checkSeventhQuestion();
@@ -70,7 +66,6 @@ public class TestClassSafariFirstTask {
 
     @Test
     public void checkEightsLastQuestion_correctAnswer() {
-        WebDriver driver = new FirefoxDriver();
         MainPage objMainPage2 = new MainPage(driver);
         objMainPage2.open();
         objMainPage2.checkEightsLastQuestion();
