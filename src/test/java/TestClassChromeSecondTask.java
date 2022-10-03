@@ -1,14 +1,14 @@
-import PageObject.MainPage;
-import PageObject.OrderPage;
+import pageobject.MainPage;
+import pageobject.OrderPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class TestClassChromeSecondTask {
+public class
+TestClassChromeSecondTask {
     private WebDriver driver;
 
     @Before
@@ -27,10 +27,10 @@ public class TestClassChromeSecondTask {
         objOrderPage.enterName("Илья");
         objOrderPage.enterSurname("Голос");
         objOrderPage.enterAddress("Ростов-на-Дону");
-        objOrderPage.enterStationForFirstTest();
+        objOrderPage.enterStationRokossovskogo();
         objOrderPage.enterPhone("89895558844");
         objOrderPage.clickNextButton();
-        objOrderPage.chooseDay();
+        objOrderPage.chooseDayFromThisMonth();
         objOrderPage.chooseDurationTwoDays();
         objOrderPage.chooseBlackColour();
         objOrderPage.addComment("Быстрее -хочу есть.*");
@@ -53,10 +53,10 @@ public class TestClassChromeSecondTask {
         objOrderPage.enterName("  ");
         objOrderPage.enterSurname("Тест");
         // Не заполнять Адрес objOrderPage.enterAddress("Тестовый город");
-        objOrderPage.enterStationForSecondTest();
+        objOrderPage.enterStationAvtozavodskaya();
         objOrderPage.enterPhone("89995556644");
         objOrderPage.clickNextButton();
-        objOrderPage.chooseDay();
+        objOrderPage.chooseDayFromThisMonth();
         objOrderPage.chooseDurationTwoDays();
         objOrderPage.chooseGreyColour();
         objOrderPage.addComment("Быстрее");

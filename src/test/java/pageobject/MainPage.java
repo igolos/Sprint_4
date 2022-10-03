@@ -1,4 +1,4 @@
-package PageObject;
+package pageobject;
 
 import static org.junit.Assert.*;
 
@@ -12,10 +12,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class MainPage {
-    public WebDriver driver;
-    private static final String PAGE_URL = "https://qa-scooter.praktikum-services.ru/";
-    private By firstOrderButton = By.xpath("//*[@id=\"root\"]/div/div/div[1]/div[2]/button[1]");
-    private By secondOrderButton = By.xpath("//*[@id=\"root\"]/div/div/div[4]/div[2]/div[5]/button");
+    private WebDriver driver;
+    private String pageURL = "https://qa-scooter.praktikum-services.ru/";
+    private By firstOrderButton = By.xpath("//div[2]/button[text()=\"Заказать\"]");
+    private By secondOrderButton = By.xpath("//div[5]/button[text()=\"Заказать\"]");
     // 7 тогглов с вопросами
     private By firstQuestion = By.id("accordion__heading-0");
     private By secondQuestion = By.id("accordion__heading-1");
@@ -42,7 +42,7 @@ public class MainPage {
     }
 
     public MainPage open() {
-        driver.get(PAGE_URL);
+        driver.get(pageURL);
         return this;
     }
 

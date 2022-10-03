@@ -1,5 +1,5 @@
-import PageObject.MainPage;
-import PageObject.OrderPage;
+import pageobject.MainPage;
+import pageobject.OrderPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
@@ -27,10 +27,10 @@ public class TestClassSafariSecondTask {
         objOrderPage.enterName("Анастасия");
         objOrderPage.enterSurname("Голос");
         objOrderPage.enterAddress("Москва");
-        objOrderPage.enterStationForFirstTest();
+        objOrderPage.enterStationRokossovskogo();
         objOrderPage.enterPhone("+79995556644");
         objOrderPage.clickNextButton();
-        objOrderPage.chooseDay();
+        objOrderPage.chooseDayFromThisMonth();
         objOrderPage.chooseDurationOneDay();
         objOrderPage.chooseBlackColour();
         objOrderPage.addComment("Быстрее");
@@ -50,10 +50,10 @@ public class TestClassSafariSecondTask {
         objOrderPage.enterName("  ");
         objOrderPage.enterSurname("Тест");
         // Не заполнять Адрес objOrderPage.enterAddress("Тестовый город");
-        objOrderPage.enterStationForSecondTest();
+        objOrderPage.enterStationAvtozavodskaya();
         objOrderPage.enterPhone("89995556644");
         objOrderPage.clickNextButton();
-        objOrderPage.chooseDay();
+        objOrderPage.chooseDayFromThisMonth();
         objOrderPage.chooseDurationTwoDays();
         objOrderPage.chooseGreyColour();
         objOrderPage.addComment("Быстрее");
