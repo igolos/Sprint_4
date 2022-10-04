@@ -60,56 +60,56 @@ public class MainPage {
         WebElement element = driver.findElement(firstQuestion);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.elementToBeClickable(firstQuestion)).click();
-        assertEquals("Текст не тот", firstAnswer, driver.findElement(By.xpath("/html/body/div/div/div/div[5]/div[2]/div/div[1]/div[2]/p")).getText());
+        assertEquals("Текст не тот", firstAnswer, driver.findElement(By.xpath("//div[@id=\"accordion__panel-0\"]/p")).getText());
     }
 
     public void checkSecondQuestion() {
         WebElement element = driver.findElement(secondQuestion);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.elementToBeClickable(secondQuestion)).click();
-        assertEquals("Текст не тот", secondAnswer, driver.findElement(By.xpath("/html/body/div/div/div/div[5]/div[2]/div/div[2]/div[2]/p")).getText());
+        assertEquals("Текст не тот", secondAnswer, driver.findElement(By.xpath("//div[@id=\"accordion__panel-1\"]/p")).getText());
     }
 
     public void checkThirdQuestion() {
         WebElement element = driver.findElement(thirdQuestion);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.elementToBeClickable(thirdQuestion)).click();
-        assertEquals("Текст не тот", thirdAnswer, driver.findElement(By.xpath("/html/body/div/div/div/div[5]/div[2]/div/div[3]/div[2]/p")).getText());
+        assertEquals("Текст не тот", thirdAnswer, driver.findElement(By.xpath("//div[@id=\"accordion__panel-2\"]/p")).getText());
     }
 
     public void checkFourthQuestion() {
         WebElement element = driver.findElement(fourthQuestion);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.elementToBeClickable(fourthQuestion)).click();
-        assertEquals("Текст не тот", fourthAnswer, driver.findElement(By.xpath("/html/body/div/div/div/div[5]/div[2]/div/div[4]/div[2]/p")).getText());
+        assertEquals("Текст не тот", fourthAnswer, driver.findElement(By.xpath("//div[@id=\"accordion__panel-3\"]/p")).getText());
     }
 
     public void checkFifthQuestion() {
         WebElement element = driver.findElement(fifthQuestion);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.elementToBeClickable(fifthQuestion)).click();
-        assertEquals("Текст не тот", fifthAnswer, driver.findElement(By.xpath("/html/body/div/div/div/div[5]/div[2]/div/div[5]/div[2]/p")).getText());
+        assertEquals("Текст не тот", fifthAnswer, driver.findElement(By.xpath("//div[@id=\"accordion__panel-4\"]/p")).getText());
     }
 
     public void checkSixthQuestion() {
         WebElement element = driver.findElement(sixthQuestion);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.elementToBeClickable(sixthQuestion)).click();
-        assertEquals("Текст не тот", sixthAnswer, driver.findElement(By.xpath("/html/body/div/div/div/div[5]/div[2]/div/div[6]/div[2]/p")).getText());
+        assertEquals("Текст не тот", sixthAnswer, driver.findElement(By.xpath("//div[@id=\"accordion__panel-5\"]/p")).getText());
     }
 
     public void checkSeventhQuestion() {
         WebElement element = driver.findElement(seventhQuestion);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.elementToBeClickable(seventhQuestion)).click();
-        assertEquals("Текст не тот", seventhAnswer, driver.findElement(By.xpath("/html/body/div/div/div/div[5]/div[2]/div/div[7]/div[2]/p")).getText());
+        assertEquals("Текст не тот", seventhAnswer, driver.findElement(By.xpath("//div[@id=\"accordion__panel-6\"]/p")).getText());
     }
 
     public void checkEightsLastQuestion() {
         WebElement element = driver.findElement(eightsLastQuestion);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.elementToBeClickable(eightsLastQuestion)).click();
-        assertEquals("Текст не тот", eightsLastAnswer, driver.findElement(By.xpath("/html/body/div/div/div/div[5]/div[2]/div/div[8]/div[2]/p")).getText());
+        assertEquals("Текст не тот", eightsLastAnswer, driver.findElement(By.xpath("//div[@id=\"accordion__panel-7\"]/p")).getText());
 
     }
 }
